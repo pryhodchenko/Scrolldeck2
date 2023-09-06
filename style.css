@@ -1,0 +1,144 @@
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #FFFEFE;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 7rem; /* Desktop font size */
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h2 {
+  color: #FFFEFE;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.875rem; /* Desktop font size */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: red;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1rem; /* Desktop font size */
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.25rem; /* Adjusted letter spacing */
+}
+
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 6rem; /* Adjusted font size for mobile */
+    margin: 0;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 2rem; /* Adjusted font size for mobile */
+    letter-spacing: 0.25rem; /* Adjusted letter spacing for mobile */
+  }
+  #reprezent-logo {
+    position: sticky;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .logo-container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+.logo-container {
+  width: 100%;
+  height: 170vh;
+  background-color: black;
+}
+
+#reprezent-logo {
+  position: sticky;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  max-width: 20%;
+  max-height: 100vh;
+}
+
+.Intro_text {
+  position: relative;
+  height: 10rem;
+}
+
+.Intro_text .test {
+  opacity: 0;
+  transition: opacity 1.4s ease, transform 1.4s ease; /* Adding scale transition */
+  transform: scale(0.9); /* Initial scale for .test */
+}
+
+.Intro_text .title {
+  opacity: 0;
+  transition: opacity 1.7s ease, transform 2s ease; /* Adding scale transition */
+  transform: scale(0.9); /* Initial scale for .title */
+}
+
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent; /* Set the background color as needed */
+  z-index: -1; /* Place the canvas behind other elements */
+}
+
+.tv{
+  background-color: aliceblue;
+}
+
+.counter{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  color: #FFFEFE;
+  text-align: center;
+}
+
+.count1{
+  font-size: 6rem;
+}
+
+.years_text {
+  opacity: 0;
+  transition: opacity 0.5s; /* Adjust the duration as needed */
+}
