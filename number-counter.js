@@ -3,7 +3,7 @@ var scrolling = false; // Flag to prevent multiple scroll events from firing
 var countingStarted = false; // Flag to track whether counting has started
 
 // Define the position of the block where you want to start counting
-var startCountingPosition = 1800; // Adjust this value as needed
+var startCountingPosition = 1500; // Adjust this value as needed
 
 const scanning = anime({
   targets: expyears,
@@ -16,12 +16,14 @@ const scanning = anime({
     years.innerHTML = expyears.years;
 
     // Check if the counter reaches 10
-    if (expyears.years === 10) {
-       // Gradually fade out the text
-       fadeElementOut('.years_text', 10); // Adjust the duration as needed
-    } else {
+    if (expyears.years >= 10) {
        // Gradually fade in the text
-       fadeElementIn('.years_text', 0); // Adjust the duration as needed
+       fadeElementOut('.years_text', 10); // Adjust the duration as needed
+   
+       
+    } else {
+      // Gradually fade out the text
+      fadeElementIn('.years_text', 0); // Adjust the duration as needed
    
     }
   }
