@@ -57,7 +57,7 @@ function handleScroll(event) {
     // Delay to prevent rapid scrolling
     setTimeout(function() {
       scrolling = false;
-    }, 150); // Adjust the delay time as needed
+    }, 100); // Adjust the delay time as needed
   }
 }
 
