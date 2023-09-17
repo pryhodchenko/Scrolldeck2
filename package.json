@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "npm run clear && vite build",
+    "preview": "vite preview",
+    "clear": "rm -rf dist"
   },
   "devDependencies": {
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-static-copy": "^0.17.0"
   },
   "dependencies": {
     "gsap": "^3.12.2",

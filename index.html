@@ -15,19 +15,21 @@
 <div class="logo-container"><canvas id="reprezent-logo"></canvas></div>
 <div class="Intro_text"><h4 class="test">INTRODUCING</h4><h1 class="title">Scroll Deck</h1></div>
 <canvas class="webgl"></canvas>
+<canvas id="custom-canvas"></canvas>
 <script type="module" src="main.js"></script>
 <div class="counter"> <span class="count1"> 10 </span> <br> <span class="years_text">years of experience in presentations </span></div>
 <canvas class="tv" style="background-color: aliceblue;"></canvas>
 <script type="module" src="tv.js"></script>
 <!-- Script with logo animation -->
-<script src="Reprezent_logo.js"></script>
+<script type="module" src="Reprezent_logo.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<script src="intersection test.js"></script>
+<script type="module" src="number-counter.js"></script>
+<script type="module" src="intersection test.js"></script>
 <script src="Slide canvas.js"></script>
-<script src="number-counter.js"></script>
 
 
-  
+
+
 </body>
 </html>
 <!--
@@ -49,7 +51,7 @@
       update: function() {
         var first = document.querySelector('.count1');
         first.innerHTML = filesScanned.first;
-        
+
         var second = document.querySelector('.count2');
         second.innerHTML = filesScanned.two;
 
@@ -57,7 +59,7 @@
         three.innerHTML = filesScanned.three
       }
     });
-    
+
     document.querySelector('.play-scan').onclick = scanning.restart;
 
     </script>
