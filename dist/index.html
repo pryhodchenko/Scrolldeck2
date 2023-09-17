@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reprezent scroll deck</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/index-860b408c.js"></script>
+  <link rel="stylesheet" href="/assets/index-5dd479c5.css">
+</head>
+<body>
+<!-- Creating canvas -->
+<div class="logo-container"><canvas id="reprezent-logo"></canvas></div>
+<div class="Intro_text"><h4 class="test">INTRODUCING</h4><h1 class="title">Scroll Deck</h1></div>
+<canvas class="webgl"></canvas>
+<canvas id="custom-canvas"></canvas>
+
+<div class="counter"> <span class="count1"> 10 </span> <br> <span class="years_text">years of experience in presentations </span></div>
+<canvas class="tv" style="background-color: aliceblue;"></canvas>
+
+<!-- Script with logo animation -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+<script src="Slide canvas.js"></script>
+
+
+
+
+</body>
+</html>
+<!--
+<div class="numbers">
+  <div class="block"><div class="textnum" > <span class="count1">0 </span> mln </div> <div class="textdescriptor"> TVs sold in total </div></div>
+
+  <script>
+    var filesScanned = { first: 0, two: 0, three: 0 };
+
+    const scanning = anime({
+      targets: filesScanned,
+      autoplay: true,
+      duration: 3000,
+      first: 1.5,
+      two: 14,
+      three: 16,
+      easing: 'linear',
+      round: 1,
+      update: function() {
+        var first = document.querySelector('.count1');
+        first.innerHTML = filesScanned.first;
+
+        var second = document.querySelector('.count2');
+        second.innerHTML = filesScanned.two;
+
+        var three = document.querySelector('.count3');
+        three.innerHTML = filesScanned.three
+      }
+    });
+
+    document.querySelector('.play-scan').onclick = scanning.restart;
+
+    </script>
+    -->
